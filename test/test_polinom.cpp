@@ -65,7 +65,7 @@ TEST(Monom, can_not_multiply_whith_large_degrees) {
 	Monom a(3, 9, 0, 1);
 	Monom b(2, 1, 0, 9);
 	Monom c;
-	ASSERT_NO_THROW(c = a * b);
+	ASSERT_ANY_THROW(c = a * b);
 }
 
 TEST(Node, Can_create_node){

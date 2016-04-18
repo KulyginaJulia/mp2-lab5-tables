@@ -13,5 +13,14 @@
     <ClCompile Include="..\..\..\test\test_polinom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test_node_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_SortedTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_HashTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
