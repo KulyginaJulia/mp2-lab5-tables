@@ -18,7 +18,8 @@ void HashTable::Insert(string key, Polinom* p)
 void HashTable::Delete(string key)
 {
 	int hash = hashfunc(key);
-	data[hash]->remove(NodeTable(key, NULL));
+	NodeTable nt(key, NULL);
+	data[hash]->remove(nt);
 }
 
 Polinom* HashTable::GetNode(string key)
