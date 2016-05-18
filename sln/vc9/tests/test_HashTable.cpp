@@ -33,7 +33,7 @@ TEST(TableHash, can_delete) {
 	HashTable t;
 	Polinom p;
 	p.InsertFirst(Monom(1, 1, 0, 0));
-	t.Insert("a", &p);
-	t.Delete("a");
-	EXPECT_EQ(NULL, t.GetNode("a"));
+	t.Insert("w", &p);
+	t.Delete("w");
+	EXPECT_EQ(NULL, t.GetNode("w"));
 }

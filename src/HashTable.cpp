@@ -5,7 +5,7 @@ HashTable::HashTable()
 	data = new list<NodeTable>*[max_size];
 	for (int i = 0; i < max_size; i++)
 	{
-		data[i] = new list < NodeTable > ;
+		data[i] = new list<NodeTable>;
 	}
 }
 
@@ -17,6 +17,7 @@ void HashTable::Insert(string key, Polinom* p)
 
 void HashTable::Delete(string key)
 {
+	
 	int hash = hashfunc(key);
 	NodeTable nt(key, NULL);
 	data[hash]->remove(nt);

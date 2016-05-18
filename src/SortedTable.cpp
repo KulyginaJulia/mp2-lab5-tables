@@ -14,7 +14,7 @@ bool SortedTable::IsFull() {
 SortedTable::SortedTable()
 {
 	count_data = 0;
-	max_size = 2;
+	max_size = 5;
 	data = new NodeTable[max_size];
 }
 

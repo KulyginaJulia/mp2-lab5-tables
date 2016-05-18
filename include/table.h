@@ -13,7 +13,7 @@ private:
 	Polinom* element;
 public:
 	NodeTable();
-	NodeTable(const NodeTable &r);
+	NodeTable(const NodeTable & r);
 	NodeTable(string name_, Polinom* elem);
 
 	string GetKey() const;

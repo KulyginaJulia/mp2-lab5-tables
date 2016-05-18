@@ -6,9 +6,10 @@ NodeTable::NodeTable() {
 	element = new Polinom;
 }
 
-NodeTable::NodeTable(const NodeTable& r) {
+NodeTable::NodeTable(const NodeTable& r){
 	name = r.GetKey();
-	element = new Polinom(*r.GetElement());
+	Polinom* p = r.GetElement();
+	element = p;
 }
 
 NodeTable::NodeTable(string name_, Polinom* elem) {
